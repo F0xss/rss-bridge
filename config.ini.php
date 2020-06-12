@@ -1,16 +1,12 @@
 ; <?php exit; ?> DO NOT REMOVE THIS LINE
 
-; This file contains the default settings for RSS-Bridge. Do not change this
-; file, it will be replaced on the next update of RSS-Bridge! You can specify
-; your own configuration in 'config.ini.php' (copy this file).
-
 [system]
 
 ; Определяет часовой пояс, используемый RSS-мостом
 ; Список поддерживаемых часовых поясов можно найти на
 ; https://www.php.net/manual/en/timezones.php
 ; timezone = "UTC" (default)
-timezone = "UTC +3"
+timezone = "Europe/Moscow"
 
 [cache]
 
@@ -39,7 +35,7 @@ url = ""
 ; ""    = Show proxy url
 name = "Hidden proxy name"
 
-; Allow users to disable proxy usage for specific requests.
+; Разрешить пользователям отключать использование прокси для определенных запросов.
 ; true  = enabled
 ; false = disabled (default)
 by_bridge = false
@@ -63,12 +59,12 @@ password = ""
 
 [error]
 
-; Defines how error messages are returned by RSS-Bridge
+; Определяет, как сообщения об ошибках возвращаются RSS-мостом
 ;
 ; "feed" = As part of the feed (default)
 ; "http" = As HTTP error message
 ; "none" = No errors are reported
-output = "feed"
+output = "http"
 
 ; Определяет, как часто ошибка должна возникать, прежде чем она сообщается пользователю
 report_limit = 1
